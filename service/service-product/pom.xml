@@ -5,17 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.atguigu.gmall</groupId>
-        <artifactId>gmall-parent</artifactId>
+        <artifactId>service</artifactId>
         <version>1.0</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>service-product</artifactId>
+    <version>1.0</version>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <packaging>jar</packaging>
+    <name>service-product</name>
+    <description>service-product</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>8.2.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
